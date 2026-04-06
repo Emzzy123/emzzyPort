@@ -196,10 +196,10 @@ function FocusIcon({ type }: { type: string }) {
 export default function Home() {
   return (
     <main className="relative overflow-x-hidden">
-      <section className="page-shell section-space relative">
+      <section className="page-shell relative pb-[clamp(4rem,8vw,7rem)] pt-6 sm:pt-8">
         <div className="grid-overlay absolute inset-x-0 top-10 -z-10 h-[32rem] rounded-[2rem] opacity-40" />
 
-        <header className="glass-panel sticky top-4 z-20 mb-8 flex items-center justify-between rounded-full px-4 py-3 sm:px-6">
+        <header className="glass-panel sticky top-4 z-20 mb-6 flex items-center justify-between rounded-full px-4 py-3 sm:px-6">
           <div className="flex items-center gap-3">
             <span className="flex h-10 w-10 items-center justify-center rounded-full bg-accent-soft font-mono text-sm font-semibold text-accent">
               EC
@@ -228,12 +228,12 @@ export default function Home() {
           </nav>
         </header>
 
-        <div className="grid items-center gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
+        <div className="grid items-start gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:gap-14">
           <div className="space-y-8">
             <div className="space-y-5">
               <span className="eyebrow">Data Engineering Portfolio</span>
               <div className="space-y-5">
-                <h1 className="max-w-4xl text-5xl font-semibold leading-[0.96] tracking-[-0.06em] text-white sm:text-6xl lg:text-7xl">
+                <h1 className="max-w-4xl text-[clamp(2.6rem,5.4vw,4.8rem)] font-semibold leading-[1] tracking-[-0.05em] text-white">
                   Building dependable data infrastructure that helps teams move
                   with confidence.
                 </h1>
@@ -298,14 +298,14 @@ export default function Home() {
                   </span>
                 </div>
 
-                <div className="overflow-hidden rounded-[1.6rem] border border-white/10 bg-background-alt">
+                <div className="max-h-[32rem] overflow-hidden rounded-[1.6rem] border border-white/10 bg-background-alt">
                   <Image
                     src="/profile.jpeg"
                     alt="Portrait of Emeka Chidoka"
                     width={900}
                     height={1100}
                     priority
-                    className="h-auto w-full object-cover"
+                    className="h-full w-full object-cover object-center"
                   />
                 </div>
 
@@ -491,7 +491,7 @@ export default function Home() {
             <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
               <a
                 href={profile.email}
-                className="inline-flex min-w-56 items-center justify-center rounded-full bg-[linear-gradient(135deg,_#ffffff,_#d9f0ff)] px-6 py-3 text-sm font-semibold text-[#07111b] shadow-[0_12px_32px_rgba(125,185,255,0.22)] transition hover:brightness-105"
+                className="inline-flex min-w-56 items-center justify-center rounded-full bg-accent px-6 py-3 text-sm font-semibold text-slate-950 shadow-[0_12px_32px_rgba(38,208,124,0.22)] transition hover:bg-[#44e192]"
               >
                 Send an Email
               </a>
