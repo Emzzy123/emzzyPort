@@ -298,14 +298,14 @@ export default function Home() {
                   </span>
                 </div>
 
-                <div className="max-h-[32rem] overflow-hidden rounded-[1.6rem] border border-white/10 bg-background-alt">
+                <div className="flex max-h-[32rem] items-center justify-center overflow-hidden rounded-[1.6rem] border border-white/10 bg-background-alt">
                   <Image
                     src="/profile.jpeg"
                     alt="Portrait of Emeka Chidoka"
                     width={900}
                     height={1100}
                     priority
-                    className="h-full w-full object-cover object-center"
+                    className="h-auto max-h-[32rem] w-full object-contain object-center"
                   />
                 </div>
 
