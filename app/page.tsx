@@ -231,7 +231,9 @@ export default function Home() {
         <div className="grid items-start gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:gap-14">
           <div className="space-y-8">
             <div className="space-y-5">
-              <span className="eyebrow">Data Engineering Portfolio</span>
+              <span className="eyebrow hidden lg:!inline-flex">
+                Data Engineering Portfolio
+              </span>
               <div className="space-y-5">
                 <h1 className="max-w-4xl text-[clamp(2.6rem,5.4vw,4.8rem)] font-semibold leading-[1] tracking-[-0.05em] text-white">
                   Building dependable data infrastructure that helps teams move
