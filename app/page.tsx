@@ -7,8 +7,8 @@ const profile = {
     "I design data systems that stay clean, dependable, and useful long after launch. From ingestion and transformation to warehousing and delivery, I build the pipelines and analytics foundations teams can confidently scale on.",
   location: "Available for remote and collaborative product teams",
   email: "mailto:hello@emekachidoka.com",
-  github: "https://github.com/emekachidoka",
-  linkedin: "https://www.linkedin.com/in/emekachidoka",
+  github: "https://github.com/Emzzy123",
+  linkedin: "https://www.linkedin.com/in/emeka-chidoka-a4a633158/",
   resume: "/Emeka_Chidoka.pdf",
 };
 
