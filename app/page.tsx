@@ -12,6 +12,16 @@ const profile = {
   resume: "/Emeka_Chidoka.pdf",
 };
 
+const certificate = {
+  title: "Master Data Engineer (MDE)",
+  issuer: "10Alytics",
+  issued: "Issued April 14, 2026",
+  id: "MDE/C25-09/0005",
+  href: "/Emeka%20Chukwudubem%20Chidoka.pdf",
+  coverage:
+    "Data Engineering Fundamentals, SQL, Python, Linux, ETL pipelines, APIs, Airflow, Azure/GCP cloud engineering, version control, and CI/CD with GitHub.",
+};
+
 const heroStats = [
   { value: "ETL / ELT", label: "Pipelines structured for reliability and change" },
   { value: "Warehousing", label: "Models built for reporting, product, and ops" },
@@ -395,7 +405,7 @@ export default function Home() {
       </section>
 
       <section className="page-shell section-space section-divider">
-        <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
+        <div className="grid items-start gap-8 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="glass-panel rounded-[2rem] p-6 sm:p-8">
             <span className="eyebrow">What Teams Need</span>
             <h2 className="mt-5 max-w-2xl text-3xl font-semibold tracking-[-0.04em] text-white sm:text-4xl">
@@ -428,20 +438,36 @@ export default function Home() {
                 ))}
               </div>
             </div>
-
             <div className="glass-panel rounded-[2rem] p-6 sm:p-8">
-              <span className="eyebrow">Resume Access</span>
-              <p className="mt-5 text-lg leading-8 text-muted">
-                A downloadable version of Emeka&apos;s resume is available directly
-                on the site for recruiters, hiring managers, and teams reviewing
-                his work.
+              <div className="flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
+                <div>
+                  <span className="eyebrow">Credential</span>
+                  <h3 className="mt-5 text-2xl font-semibold tracking-[-0.03em] text-white">
+                    {certificate.title}
+                  </h3>
+                  <p className="mt-2 text-sm font-semibold uppercase tracking-[0.2em] text-accent">
+                    {certificate.issuer}
+                  </p>
+                </div>
+                <div className="rounded-2xl border border-accent/20 bg-accent-soft px-4 py-3 text-left sm:text-right">
+                  <p className="text-sm font-semibold text-accent">
+                    {certificate.issued}
+                  </p>
+                  <p className="mt-1 font-mono text-xs text-muted-strong">
+                    {certificate.id}
+                  </p>
+                </div>
+              </div>
+              <p className="mt-5 text-sm leading-7 text-muted">
+                {certificate.coverage}
               </p>
               <a
-                href={profile.resume}
-                download
+                href={certificate.href}
+                target="_blank"
+                rel="noreferrer"
                 className="mt-6 inline-flex items-center rounded-full border border-accent/30 bg-accent-soft px-5 py-3 text-sm font-semibold text-accent transition hover:bg-accent hover:text-slate-950"
               >
-                Download PDF Resume
+                View Certificate
               </a>
             </div>
           </div>
@@ -449,14 +475,14 @@ export default function Home() {
       </section>
 
       <section id="approach" className="page-shell section-space section-divider">
-        <div className="space-y-10">
+        <div className="grid items-start gap-8 lg:grid-cols-[0.85fr_1.15fr]">
           <SectionHeading
             eyebrow="Working Approach"
             title="Thoughtful execution from problem framing to dependable delivery."
             description="A strong portfolio should show how someone works, not just what title they hold. This section frames Emeka as someone who can think clearly about systems, stakeholders, and scale."
           />
 
-          <div className="grid gap-5 lg:grid-cols-3">
+          <div className="grid gap-5">
             {collaborationSteps.map((step) => (
               <article
                 key={step.id}

@@ -89,7 +89,7 @@ select {
 }
 
 .eyebrow {
-  /* display: inline-flex; */
+  display: inline-flex;
   align-items: center;
   gap: 0.55rem;
   border: 1px solid rgba(74, 168, 255, 0.18);
