@@ -1,4 +1,4 @@
-const defaultSiteUrl = "https://emekachidoka.com";
+const defaultSiteUrl = "https://chidokaemeka.com";
 const configuredSiteUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();
 
 export const siteUrl = (configuredSiteUrl || defaultSiteUrl).replace(/\/+$/, "");
