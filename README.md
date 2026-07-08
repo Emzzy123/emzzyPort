@@ -1,4 +1,4 @@
-# Emeka Chidoka Portfolio
+# emzzyPort - Emeka Chidoka Portfolio
 
 This is the personal portfolio platform for Emeka Chidoka, a data engineer focused on building reliable pipelines, clean analytics foundations, and business-ready data systems.
 
