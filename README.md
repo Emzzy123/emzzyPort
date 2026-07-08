@@ -1,25 +1,25 @@
-# emzzyPort - Emeka Chidoka Portfolio
+# Emeka Chidoka Portfolio
 
-This is the personal portfolio platform for Emeka Chidoka, a data engineer focused on building reliable pipelines, clean analytics foundations, and business-ready data systems.
+This is my personal portfolio as a data engineer focused on building reliable pipelines, clean analytics foundations, and business-ready data systems.
 
-The site is designed to do more than show a profile. It positions Emeka as a practical, systems-minded engineer who can help teams turn raw, scattered data into dependable infrastructure for reporting, operations, and decision-making.
+I built this site to show more than a profile. It explains how I help teams turn raw, scattered data into dependable infrastructure for reporting, operations, and decision-making.
 
-## What Emeka Does
+## What I Do
 
-Emeka helps teams build data systems that are easier to trust, maintain, and scale.
+I help teams build data systems that are easier to trust, maintain, and scale.
 
-- Designs ETL and ELT pipelines for structured data movement
-- Builds warehouse-ready models for reporting, product, and operations teams
-- Improves data quality through validation, documentation, and monitoring
-- Automates manual reporting and repeatable data workflows
-- Connects business goals to practical data engineering architecture
-- Supports teams that need cleaner dashboards, clearer metrics, and stronger analytics foundations
+- I design ETL and ELT pipelines for structured data movement.
+- I build warehouse-ready models for reporting, product, and operations teams.
+- I improve data quality through validation, documentation, and monitoring.
+- I automate manual reporting and repeatable data workflows.
+- I connect business goals to practical data engineering architecture.
+- I support teams that need cleaner dashboards, clearer metrics, and stronger analytics foundations.
 
-## Portfolio Message
+## My Portfolio Message
 
-The portfolio presents Emeka as a data engineer who brings calm execution to messy data problems.
+This portfolio presents my approach to data engineering: calm execution, strong systems thinking, and a practical understanding of how teams use data.
 
-It highlights:
+It highlights my work across:
 
 - Pipeline architecture
 - Analytics engineering
@@ -27,9 +27,11 @@ It highlights:
 - Platform thinking
 - Operational clarity
 - Maintainable delivery practices
-- A Master Data Engineer credential from 10Alytics
+- My Master Data Engineer credential from 10Alytics
 
 ## Site Features
+
+I use this portfolio to make my work, credentials, and contact paths easy to find.
 
 - Modern responsive portfolio built with Next.js
 - Profile, focus areas, credential, approach, and contact sections
@@ -42,6 +44,8 @@ It highlights:
 
 ## Tech Stack
 
+I built the portfolio with:
+
 - Next.js 16
 - React 19
 - TypeScript
@@ -51,12 +55,12 @@ It highlights:
 
 ## SEO And Crawling
 
-The site includes:
+I configured the site for search discovery with:
 
 - Root metadata for title, description, canonical URL, Open Graph, Twitter, and robots tags
 - `app/sitemap.ts` for `/sitemap.xml`
 - `app/robots.ts` for `/robots.txt`
-- Existing favicon support through `app/favicon.ico`
+- Logo-based favicon support through `app/favicon.ico`
 
 Set `NEXT_PUBLIC_SITE_URL` in production if the final domain changes from the default portfolio domain.
 
