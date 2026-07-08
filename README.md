@@ -46,4 +46,4 @@ I use this portfolio to make my work, credentials, and contact paths easy to fin
 
 - GitHub: https://github.com/Emzzy123
 - LinkedIn: https://www.linkedin.com/in/emeka-chidoka-a4a633158/
-- Email: hello@emekachidoka.com
+- Email: chidokaemeka@gmail.com
