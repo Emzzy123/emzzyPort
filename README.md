@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Emeka Chidoka Portfolio
+
+This is the personal portfolio platform for Emeka Chidoka, a data engineer focused on building reliable pipelines, clean analytics foundations, and business-ready data systems.
+
+The site is designed to do more than show a profile. It positions Emeka as a practical, systems-minded engineer who can help teams turn raw, scattered data into dependable infrastructure for reporting, operations, and decision-making.
+
+## What Emeka Does
+
+Emeka helps teams build data systems that are easier to trust, maintain, and scale.
+
+- Designs ETL and ELT pipelines for structured data movement
+- Builds warehouse-ready models for reporting, product, and operations teams
+- Improves data quality through validation, documentation, and monitoring
+- Automates manual reporting and repeatable data workflows
+- Connects business goals to practical data engineering architecture
+- Supports teams that need cleaner dashboards, clearer metrics, and stronger analytics foundations
+
+## Portfolio Message
+
+The portfolio presents Emeka as a data engineer who brings calm execution to messy data problems.
+
+It highlights:
+
+- Pipeline architecture
+- Analytics engineering
+- Data quality
+- Platform thinking
+- Operational clarity
+- Maintainable delivery practices
+- A Master Data Engineer credential from 10Alytics
+
+## Site Features
+
+- Modern responsive portfolio built with Next.js
+- Profile, focus areas, credential, approach, and contact sections
+- Resume and certificate downloads
+- SEO metadata for search indexing
+- Generated sitemap and robots routes for crawlers
+- Vercel Analytics and Speed Insights integration
+- Future-ready favicon/icon support through the Next.js app metadata system
+
+## Tech Stack
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- Vercel Analytics
+- Vercel Speed Insights
+
+## SEO And Crawling
+
+The site includes:
+
+- Root metadata for title, description, canonical URL, Open Graph, Twitter, and robots tags
+- `app/sitemap.ts` for `/sitemap.xml`
+- `app/robots.ts` for `/robots.txt`
+- Existing favicon support through `app/favicon.ico`
+
+Set `NEXT_PUBLIC_SITE_URL` in production if the final domain changes from the default portfolio domain.
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000` to view the portfolio.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a production build:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Contact Links
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- GitHub: https://github.com/Emzzy123
+- LinkedIn: https://www.linkedin.com/in/emeka-chidoka-a4a633158/
+- Email: hello@emekachidoka.com

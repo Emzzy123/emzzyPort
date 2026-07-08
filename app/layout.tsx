@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { JetBrains_Mono, Manrope } from "next/font/google";
+import { siteMetadata, siteUrl } from "./site";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -15,12 +18,56 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
-    default: "Emeka Chidoka | Data Engineer",
+    default: siteMetadata.title,
     template: "%s | Emeka Chidoka",
   },
-  description:
-    "Portfolio website for Emeka Chidoka, a data engineer building reliable pipelines, analytics systems, and data products.",
+  description: siteMetadata.description,
+  applicationName: siteMetadata.name,
+  authors: [{ name: siteMetadata.name, url: siteUrl }],
+  creator: siteMetadata.name,
+  publisher: siteMetadata.name,
+  keywords: [
+    "Emeka Chidoka",
+    "Data Engineer",
+    "Data Engineering",
+    "ETL",
+    "ELT",
+    "Analytics Engineering",
+    "Data Pipelines",
+    "Data Warehousing",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
+  openGraph: {
+    title: siteMetadata.title,
+    description: siteMetadata.description,
+    url: "/",
+    siteName: siteMetadata.name,
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: siteMetadata.title,
+    description: siteMetadata.description,
+  },
 };
 
 export default function RootLayout({
@@ -44,6 +91,8 @@ export default function RootLayout({
           <div className="absolute inset-0 bg-[linear-gradient(to_bottom,_rgba(7,12,20,0.02),_rgba(7,12,20,0.18))]" />
         </div>
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
