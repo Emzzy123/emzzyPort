@@ -345,7 +345,9 @@ export default function Home() {
               </div>
               <div className="rounded-md border border-border bg-white/[0.035] p-3">
                 <p className="font-mono text-xs text-muted">MODE</p>
-                <p className="mt-1 text-sm font-semibold text-white">Remote-ready</p>
+                <p className="mt-1 text-sm font-semibold text-white">
+                  Hybrid and remote
+                </p>
               </div>
             </div>
 
