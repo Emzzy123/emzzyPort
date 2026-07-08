@@ -9,7 +9,7 @@ const profile = {
   email: "mailto:chidokaemeka@gmail.com",
   github: "https://github.com/Emzzy123",
   linkedin: "https://www.linkedin.com/in/emeka-chidoka-a4a633158/",
-  resume: "/Emeka_Chidoka.pdf",
+  resume: "/Emeka%20Chidoka%20CV.pdf",
 };
 
 const certificate = {
