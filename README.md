@@ -36,6 +36,7 @@ It highlights:
 - Resume and certificate downloads
 - SEO metadata for search indexing
 - Generated sitemap and robots routes for crawlers
+- Logo-based favicon and social preview metadata
 - Vercel Analytics and Speed Insights integration
 - Future-ready favicon/icon support through the Next.js app metadata system
 

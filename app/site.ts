@@ -8,4 +8,5 @@ export const siteMetadata = {
   title: "Emeka Chidoka | Data Engineer",
   description:
     "Portfolio website for Emeka Chidoka, a data engineer building reliable pipelines, analytics systems, and data products.",
+  logo: "/logo.jpeg",
 };

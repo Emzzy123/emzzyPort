@@ -54,12 +54,21 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
   },
   openGraph: {
     title: siteMetadata.title,
     description: siteMetadata.description,
     url: "/",
     siteName: siteMetadata.name,
+    images: [
+      {
+        url: siteMetadata.logo,
+        width: 1254,
+        height: 1254,
+        alt: "Emeka Chidoka portfolio logo",
+      },
+    ],
     locale: "en_US",
     type: "website",
   },
@@ -67,6 +76,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: siteMetadata.title,
     description: siteMetadata.description,
+    images: [siteMetadata.logo],
   },
 };
 
